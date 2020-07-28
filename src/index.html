@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+    <style>
+        h1.text-playmovie {
+            text-align: center;
+            background-color: black;
+            font-weight: bold;
+        }
+        
+        .product-imitation {
+            padding: auto;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .fa-star:before {
+            color: yellow;
+        }
+        
+        .text-star {
+            font-size: 12px;
+        }
+        
+        @media screen and (max-width: 550px) {
+            .row {
+                flex-direction: column;
+                position: static;
+            }
+            .row>input {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            .row>button {
+                width: 50%;
+                background-color: #1ab394;
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body class="top-navigation">
+    <div id="wrapper">
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom white-bg">
+                <nav class="navbar navbar-expand-lg navbar-static-top" role="navigation">
+
+                    <a href="#" class="navbar-brand">I.M Movies</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-reorder"></i>
+                    </button>
+
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav mr-auto">
+                        </ul>
+                        <!-- <search-bar></search-bar> -->
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li>
+                                <a href="#" id="logout">
+                                    <i class="fa fa-sign-out"></i> Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <search-bar></search-bar>
+                <div class="row mt-5 movie-item"></div>
+                <h1 class="text-playmovie">Play Now Movie
+                </h1>
+                <div class="row mt-5 play-now-movie">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer-bar></footer-bar>
+</body>
+
+</html>
