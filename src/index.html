@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--Import materialize.css-->
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- <search-bar></search-bar> -->
+            <div class="footer">
+                <ul class="nav">
+                    <li><a href="#home"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#search"><i class="fa fa-search"></a></li>
+                    <li><a href="#movie"><i class="fa fa-film"></i></a></li>
+                    <li><a href="#tv"><i class="fa fa-tv"></i></a></li>
+                    <li><a href="#people"><i class="fa fa-user"></i></a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div id="search-content"></div>
+    <main>
+        <i class="material-icons right">local_movies</i>
+        <p>Now Playing</p>
+        <div id="now-playing" class="row col s12"></div>
+        <a class="tooltipped" data-position="right" data-tooltip="More"><i class="material-icons medium">more_horiz</i></a>
+
+        <p>Upcoming</p>
+        <div id="up-coming" class="row col s12"></div>
+        <i class="material-icons medium">more_horiz</i>
+        <div class="bottom-line"></div>
+    </main>
+    <footer>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+
+            var elemsSlider = document.querySelectorAll('.slider');
+            var instancesSlider = M.Slider.init(elemsSlider, {
+                height: 500,
+                indicators: false
+            });
+
+            var elemsCarousel = document.querySelectorAll('.carousel');
+            var instancesCarousel = M.Carousel.init(elemsCarousel, {
+                duration: 300,
+                dist: -200,
+                shift: 0,
+                padding: 0,
+                numVisible: 0,
+                fullWidth: true,
+                indicators: false,
+                noWrap: false,
+            });
+
+            var elemsTooltips = document.querySelectorAll('.tooltipped');
+            var instancesTooltips = M.Tooltip.init(elemsTooltips);
+        });
+    </script>
+</body>
+
+</html>

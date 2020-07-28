@@ -1,0 +1,152 @@
+@font-face {
+    font-family: abrilFat;
+    src: url(../fonts/AbrilFatface-Regular.ttf);
+}
+
+main {
+    padding: 10px;
+}
+
+header {
+    padding: 5px;
+}
+
+p {
+    font-family: abrilFat;
+}
+
+nav {
+    background-color: #FFFFFF;
+}
+
+#search {
+    border-radius: 5px;
+    background-color: #131313;
+    color: #FFFFFF;
+}
+
+
+/* .btn-flat.btn-small.halfway-fab {
+    bottom: 227px;
+    right: 11px;
+    color: white;
+    background-color: transparent;
+}
+
+.card {
+    max-height: 400px !important;
+    max-width: 300px !important;
+}
+
+.card .card-image .card-title {
+    font-size: 13px;
+    font-weight: 800;
+    color: #fff;
+} */
+
+.card .card-image img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* .card .card-image .card-title {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 24px;
+    font-size: 15px;
+    font-weight: 600;
+} */
+
+
+/* .card .card-image .card-title {
+    display: block;
+    line-height: 32px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    right: 291px;
+    bottom: 42px;
+    top: -25px;
+    left: -19px;
+} */
+
+.card .card-image .card-title {
+    color: #fff;
+    position: absolute;
+    bottom: 388px !important;
+    left: -23px !important;
+    max-width: 100%;
+    padding: 24px;
+}
+
+.card .card-image .vote {
+    line-height: 32px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    right: 291px;
+    bottom: 42px;
+    top: -27px;
+    left: 6px;
+}
+
+.card .card-reveal .card-title {
+    font-size: small;
+    font-weight: 500;
+}
+
+i.material-icons.star {
+    position: relative;
+    top: 2px;
+}
+
+.carousel {
+    width: 59%;
+    height: 299px;
+}
+
+.carousel .carousel-item>img {
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+}
+
+i.material-icons.more-now-playing {
+    position: absolute;
+    top: 370px;
+    right: 10px;
+    color: #131313;
+}
+
+i.material-icons.more-up-coming.medium {
+    position: absolute;
+    top: 811px;
+    right: 10px;
+    color: #131313;
+}
+
+.bottom-line {
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .card .card-image img {
+        height: 200px;
+    }
+    span.vote {
+        position: absolute;
+        right: 80px;
+        bottom: 44px;
+    }
+}
